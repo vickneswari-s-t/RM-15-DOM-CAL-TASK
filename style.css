@@ -11,17 +11,21 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  background:navy;
+  background:wheat;
 }
-/* h1{
-  text-align:top;
+.h1{
+  text-align:center;
+    display: flex;
+  justify-content: center;
+  margin-top: 0px auto;
   font-size:24px;
   color:white;
 
-} */
+} 
 .container{
 
   position: relative;
+  align-items: center;
   max-width: 300px;
   width:100%;
   border-radius:12px;
@@ -47,14 +51,14 @@ pointer-events: none;
 
 
 .buttons{
-  /* width:100%;
+  width:100%;
   padding: 20px;
   background-color: grey;
   color:white;
   font-size: 24px;
   font-weight:bold;
   border:none;
-  border-radius: 5px; */
+  border-radius: 5px;
   display: grid;
   grid-gap:10px;
   grid-template-columns:repeat(4, 1fr) ;
@@ -69,7 +73,7 @@ pointer-events: none;
   background-color: aqua;
 }
 .buttons button:active{
-  transform:scale(0,99);
+  transform:scale(0.99);
 
 }
 .operator{
