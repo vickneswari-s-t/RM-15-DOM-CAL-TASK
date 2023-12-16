@@ -1,10 +1,11 @@
 const display=document.querySelector(".display");
-const buttons=document.querySelectorall("button");
+const buttons=document.querySelectorAll("button");
 const specialchars=["%","*","/","-","+","="];
 let output="";
 
-const calculate=(btnvalue) =>{
-  if(btnvalue === "=" && btnvalue !==""){
+const calculate=(btnvalue) => {
+
+  if(btnvalue === "=" && btnvalue !== ""){
 
   output=eval(output.replace("%","/100"));
 }else if(btnvalue ==="AC"){
@@ -19,7 +20,6 @@ output+= btnvalue;
 }
 display.value = output;
 };
-
-buttons.foreach(buttons) => {
-  buttons.addeventListener("click",(e) =>calculate(e.target.dataset.value));
-};
+buttons.forEach((button) => {
+  button.addEventListener("click",(e) =>calculate(e.target.dataset.value));
+});
